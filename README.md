@@ -196,8 +196,8 @@ print(response['message']['content'])
 ### NGINX with Basic HTTP Authentication
 Another method is add in Basic Authenciation, we can use nginx to do that too.
 
-1. **Create Password File**
-   below command will prompt you create a user and password. You need this user and password for basic authenticator  
+1. **Create Password File**  
+below command will prompt you create a user and password. You need this user and password for basic authenticator  
    ```bash
    sudo htpasswd -c /etc/nginx/.htpasswd userx01
    ```
