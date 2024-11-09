@@ -11,8 +11,6 @@ A quick guide for setting up Ollama on a GPU-optimized VM using brev.dev and con
     - [Python Client](#python-client)
     - [cURL Examples](#curl-examples)
 - [NGINX Basic Authentication](#NGINX-with-Basic-HTTP-Authentication)
-  - [Basic HTTP Authentication](#basic-http-authentication)
-
 - [Monitoring](#monitoring)
 - [Additional Resources](#additional-resources)
 
