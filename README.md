@@ -197,11 +197,12 @@ print(response['message']['content'])
 Another method is add in Basic Authenciation, we can use nginx to do that too.
 
 1. **Create Password File**
+   below command will prompt you create a user and password. You need this user and password for basic authenticator  
    ```bash
    sudo htpasswd -c /etc/nginx/.htpasswd userx01
    ```
 
-2. **NGINX Configuration using Basic Auth**
+3. **NGINX Configuration using Basic Auth**
    ```nginx
    server {
        listen 80;
@@ -220,7 +221,7 @@ Another method is add in Basic Authenciation, we can use nginx to do that too.
 
 1. **With Basic Auth**
    ```bash
-   curl -u userx01:password123 http://YOUR_IP/api/chat -d '{
+   curl -u user01:password123 http://YOUR_IP/api/chat -d '{
      "model": "llama2",
      "format": "json",
      "stream": true,
