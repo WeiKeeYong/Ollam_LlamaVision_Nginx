@@ -5,12 +5,14 @@ A quick guide for setting up Ollama on a GPU-optimized VM using brev.dev and con
 ## Table of Contents
 - [Prerequisites](#prerequisites)
 - [Setting Up Ollama](#setting-up-ollama)
-- [NGINX Configuration](#nginx-configuration)
+- [NGINX Token Authentication](#nginx-configuration)
   - [Basic Bearer Token Authentication](#basic-bearer-token-authentication)
+  - [Client Integration](#client-integration)
+    - [Python Client](#python-client)
+    - [cURL Examples](#curl-examples)
+- [NGINX Basic Authentication](#NGINX-with-Basic-HTTP-Authentication)
   - [Basic HTTP Authentication](#basic-http-authentication)
-- [Client Integration](#client-integration)
-  - [Python Client](#python-client)
-  - [cURL Examples](#curl-examples)
+
 - [Monitoring](#monitoring)
 - [Additional Resources](#additional-resources)
 
@@ -193,7 +195,7 @@ print(response['message']['content'])
    ```
 
 
-### Basic HTTP Authentication
+### NGINX with Basic HTTP Authentication
 Another method is add in Basic Authenciation, we can use nginx to do that too.
 
 1. **Create Password File**
