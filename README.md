@@ -197,7 +197,7 @@ print(response['message']['content'])
 Another method is add in Basic Authenciation, we can use nginx to do that too.
 
 1. **Create Password File**  
-below command will create user01 and prompt you enter password. You need this user01 and password for basic authenticator  
+below command will create user01 and prompt you to supply and confirm a password for user01. You need this user01 and password for basic authenticator  
    ```bash
    sudo htpasswd -c /etc/nginx/.htpasswd user01
    ```
@@ -251,5 +251,5 @@ Check GPU utilization using either of these methods:
 ## Additional Resources
 
 - [Ollama OpenAI Compatibility](https://ollama.com/blog/openai-compatibility)
-
+- [How To Set Up Password Authentication with Nginx on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
 ---
