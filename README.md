@@ -178,7 +178,7 @@ print(response['message']['content'])
 
 1. **With Bearer Token**
    ```bash
-   curl -X POST http://35.229.78.81:80/v1/chat \
+   curl -X POST http://35.229.78.81:80/v1/chat/completions \
      -H "Authorization: Bearer keyxx2233hx" \
      -H "Content-Type: application/json" \
      -d '{
@@ -221,7 +221,7 @@ below command will create user01 and prompt you to supply and confirm a password
 
 1. **With Basic Auth**
    ```bash
-   curl -u user01:password123 http://YOUR_IP/api/chat -d '{
+   curl -u user01:password123 http://YOUR_IP/api/chat/completions -d '{
      "model": "llama2",
      "format": "json",
      "stream": true,
