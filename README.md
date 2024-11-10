@@ -7,7 +7,7 @@ A quick guide for setting up Ollama on a GPU-optimized VM using brev.dev and con
 - [Setting Up Ollama](#setting-up-ollama)
 - [NGINX Token Authentication](#nginx-configuration)
   - [Basic Bearer Token Authentication](#basic-bearer-token-authentication)
-  - [Sample Code](#sample_code)
+  - [Sample Code](#Sample_Code)
     - [Python Client](#python-client)
     - [cURL Examples](#curl-examples)
 - [NGINX Basic Authentication](#NGINX-with-Basic-HTTP-Authentication)
