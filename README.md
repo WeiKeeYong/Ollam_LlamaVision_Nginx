@@ -181,7 +181,7 @@ from openai import OpenAI
 
 client = OpenAI(
     base_url = 'http://35.229.78.81/v1',
-    api_key='keyxx2233hx', # required, but unused
+    api_key='keyxx2233hx', 
 )
 
 response = client.chat.completions.create(
