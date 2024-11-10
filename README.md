@@ -7,7 +7,7 @@ A quick guide for setting up Ollama on a GPU-optimized VM using brev.dev and con
 - [Setting Up Ollama](#setting-up-ollama)
 - [NGINX Token Authentication](#nginx-configuration)
   - [Basic Bearer Token Authentication](#basic-bearer-token-authentication)
-  - [Client Integration](#client-integration)
+  - [Sample Code](#sample_code)
     - [Python Client](#python-client)
     - [cURL Examples](#curl-examples)
 - [NGINX Basic Authentication](#NGINX-with-Basic-HTTP-Authentication)
@@ -126,7 +126,7 @@ This Nginx configuration does the following:
 If you want to add SSL encryption to your server, you can configure SSL by including your **.pem** certificate files in the Nginx configuration. For detailed instructions on setting up SSL, you can refer to online resources or documentation (e.g., [Nginx SSL configuration guide](https://nginx.org/en/docs/http/configuring_https_servers.html)).
 
 
-## Client Integration
+## Sample Code
 
 ### Python Client
 Originally ollama library does not support authotization, need to override with subclass to add authotization support. 
