@@ -132,6 +132,7 @@ If you want to add SSL encryption to your server, you can configure SSL by inclu
 Originally ollama library does not support authotization, need to override with subclass to add authotization support. 
 
 ```python
+#using ollama library
 from ollama import Client
 import requests
 
@@ -172,6 +173,25 @@ response = client.chat(model='llama3.2-vision', messages=[
     },
 ])
 print(response['message']['content'])
+```
+```python
+#Can also use OpenAI library since Ollama partially compatible with OpenAI
+
+from openai import OpenAI
+
+client = OpenAI(
+    base_url = 'http://35.229.78.81/v1',
+    api_key='keyxx2233hx', # required, but unused
+)
+
+response = client.chat.completions.create(
+  model="llama3.2-vision",
+  messages=[
+    {"role": "system", "content": "You are a helpful assistant."},
+    {"role": "user", "content": "what the best car paint color that less notice of water mark and dust?"}
+  ]
+)
+print(response.choices[0].message.content)
 ```
 
 ### cURL Examples
